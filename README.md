@@ -28,7 +28,7 @@ Note that, the conclusion drew by me may miss some points you're interested in. 
 
 [tensorflow code here](https://github.com/Kyubyong/transformer)
 
-[If you are only interested in the multihead-attention part, get the code here](./attention_is_all_you_needed)
+[If you are only interested in the multihead-attention part, get the code here](./attention_is_all_you_need)
 
 ## 2 2016CVPR_Xception: Deep Learning with Depthwise Separable Convolutions
 
