@@ -52,3 +52,8 @@ Note that, the conclusion drew by me may miss some points you're interested in. 
 
 [Tensorflow code here: not found yet]()
 
+
+
+> Some codes in this repository is copied from or slightly changed bases on:
+>
+> https://github.com/tstandley/Xception-PyTorch
