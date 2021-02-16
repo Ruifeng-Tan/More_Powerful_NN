@@ -9,9 +9,7 @@ class DepthwiseSeparableConv(nn.Module):
     Depth-wise separable convolution uses less parameters
     to generate output by convolution.
     :Examples:
-        >>> m = DepthwiseSeparableConv(300, 200, 5, dim=1)
-        >>> input = torch.randn(32, 300, 20)
-        >>> output = m(input)
+
     """
 
     def __init__(self, in_ch, out_ch, k, dim=1, bias=False):
@@ -45,7 +43,9 @@ class DepthwiseSeparableConv(nn.Module):
         :Input: (batch_num, in_ch, seq_length)
         :Output: (batch_num, out_ch, seq_length)
         """
+        print(x)
         x = self.depthwise_conv(x)
+        print(x)
         # depthwise的filter数量和通道的数量相同，每个通道只被一个filter卷积(通过groups控制)
         # 为了卷积之后的feature map的大小不变，使用padding补充损失的map尺寸
         # 由于depthwise的filter只能独立地针对一个channel卷积，忽略了cross-channel的信息
